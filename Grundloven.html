@@ -1,87 +1,224 @@
-<h1>Grundloven</h1>
-<p><strong>Her findes alle de grundlæggende love til Serveren.</strong></p>
-<h2>§ 1: Ingen griefing / Sabotage</h2>
-<p><strong>Ved ingen griefing menes der:</strong></p>
-<ul>
-<li><p>Ingen dekonstruktonen af andres matrikler</p>
-</li>
-<li><p>Ingen skade må påføres på andres dyr</p>
-</li>
-<li><p>Man har ikke ret til at placere, montere blokke på andres matrikler</p>
-</li>
-</ul>
-<h2>§ 1.5: Ingen Sabotage på Samfundsejendomme</h2>
-<p><strong>Ved ingen sabotage på samfundsejendomme menes der:</strong></p>
-<p>( Samfundsejendomme er et andet ord for offenlige bygninger ) </p>
-<ul>
-<li><p>Ingen dekonstruktionen af bygninger såsom: Retten, Spawn, Religiøse Ejendomme, osv.</p>
-</li>
-<li><p>Vandalismen på monumenter</p>
-</li>
-<li><p>Man har ikke ret til at placere, montere blokke på samfundsejendomme</p>
-</li>
-</ul>
-<h2>§ 2: Ingen tyveri</h2>
-<p><strong>Ved ingen tyveri menes der:</strong></p>
-<ul>
-<li><p>Der må ikke stjæles ejendomme fra andre spillere</p>
-</li>
-<li><p>Der må ikke stjæles Samfundsejendomme </p>
-</li>
-<li><p>Hvis der er blevet lånt noget, skal det afleveres senest på <strong>afleveringsfristen</strong></p>
-</li>
-</ul>
-<h2>§ 3: Patent</h2>
-<p>Patenter sikre at dine kreative værker ikke bliver stjålet af andre spillere </p>
-<p><strong>Herunder er kravende til en Patent</strong></p>
-<ul>
-<li><p>For at få patent på dit værk kræver det af du ikke har udgivet, annonceret eller vist den frem offenligt.</p>
-</li>
-<li><p>Dit værk skal være <strong>nyt</strong> og må ikke have været set før på serveren</p>
-</li>
-<li><p>Dit værk skal kunne fremstilles eller bruges i praksis</p>
-</li>
-<li><p>En</p>
-</li>
-</ul>
-<p> <strong>Herunder stå hvad kan og hvad ikke kan pantenteres</strong></p>
-<ul>
-<li><p>JA: Nye redstone maskiner</p>
-</li>
-<li><p>JA: Nye farms</p>
-</li>
-<li><p>NEJ:  logo'er til Armor, shields, banners, osv.</p>
-</li>
-<li><p>NEJ:  Bygninger kan og må ikke patensteres</p>
-</li>
-</ul>
-<h2>§ 3.3: Designret</h2>
-<p>Designret findes for at du kan beholde dine egne designs.</p>
-<p><strong>Herunder er kravende til at få designret</strong></p>
-<ul>
-<li><p>Dit design skal være unikt og må ikke have være set på serveren før</p>
-</li>
-<li><p>Dit design må ikke være få simpelt. F.eks. Dannebro eller en firkant.</p>
-</li>
-<li><p>En dommer skal vurdere dit design baseres på de forige krav</p>
-</li>
-</ul>
-<p><strong>Herunder er listen af ting du kan få designret på</strong></p>
-<ul>
-<li><p>Shields</p>
-</li>
-<li><p>Banners</p>
-</li>
-<li><p>Armor trims</p>
-</li>
-</ul>
-<h2>§ 4: Dyr</h2>
-<p><strong>Ved Dyr menes der:</strong></p>
-<ul>
-<li><p>Husdyr skal forblive på ejerens grund eller sammen med ejeren på alle tidspunkter</p>
-</li>
-<li><p>Vilde dyr ejes ikke af nogen og må derfor blive adopteret eller slagtet</p>
-</li>
-<li><p>Ingen må eje* nogle former for dyr. Eksemple: En person kan ikke eje all heste og derefter sælge dem / deres rettigheder</p>
-</li>
-</ul>
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundloven</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            color: #d1d5db;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 48px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            text-align: center;
+        }
+
+        .search-box {
+            position: sticky;
+            top: 20px;
+            background-color: #121212;
+            padding: 10px 0 24px 0;
+            z-index: 10;
+        }
+
+        input[type="text"] {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #333333;
+            border-radius: 4px;
+            padding: 10px 16px;
+            width: 100%;
+            max-width: 360px;
+            font-size: 15px;
+            outline: none;
+            text-align: center;
+        }
+
+        input[type="text"]:focus {
+            border-color: #666666;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin: 0 0 12px 0;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin: 40px 0 16px 0;
+        }
+
+        p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 24px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        li p {
+            margin: 0;
+        }
+
+        mark {
+            background-color: #ffe066;
+            color: #000000;
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Søg..." oninput="searchWords()">
+        </div>
+
+        <div id="content">
+            <h1>Grundloven</h1>
+            <p><strong>Her findes alle de grundlæggende love til Serveren.</strong></p>
+            <h2>§ 1: Ingen griefing / Sabotage</h2>
+            <p><strong>Ved ingen griefing menes der:</strong></p>
+            <ul>
+            <li><p>Ingen dekonstruktonen af andres matrikler</p>
+            </li>
+            <li><p>Ingen skade må påføres på andres dyr</p>
+            </li>
+            <li><p>Man har ikke ret til at placere, montere blokke på andres matrikler</p>
+            </li>
+            </ul>
+            <h2>§ 1.5: Ingen Sabotage på Samfundsejendomme</h2>
+            <p><strong>Ved ingen sabotage på samfundsejendomme menes der:</strong></p>
+            <p>( Samfundsejendomme er et andet ord for offenlige bygninger ) </p>
+            <ul>
+            <li><p>Ingen dekonstruktionen af bygninger såsom: Retten, Spawn, Religiøse Ejendomme, osv.</p>
+            </li>
+            <li><p>Vandalismen på monumenter</p>
+            </li>
+            <li><p>Man har ikke ret til at placere, montere blokke på samfundsejendomme</p>
+            </li>
+            </ul>
+            <h2>§ 2: Ingen tyveri</h2>
+            <p><strong>Ved ingen tyveri menes der:</strong></p>
+            <ul>
+            <li><p>Der må ikke stjæles ejendomme fra andre spillere</p>
+            </li>
+            <li><p>Der må ikke stjæles Samfundsejendomme </p>
+            </li>
+            <li><p>Hvis der er blevet lånt noget, skal det afleveres senest på <strong>afleveringsfristen</strong></p>
+            </li>
+            </ul>
+            <h2>§ 3: Patent</h2>
+            <p>Patenter sikre at dine kreative værker ikke bliver stjålet af andre spillere </p>
+            <p><strong>Herunder er kravende til en Patent</strong></p>
+            <ul>
+            <li><p>For at få patent på dit værk kræver det af du ikke har udgivet, annonceret eller vist den frem offenligt.</p>
+            </li>
+            <li><p>Dit værk skal være <strong>nyt</strong> og må ikke have været set før på serveren</p>
+            </li>
+            <li><p>Dit værk skal kunne fremstilles eller bruges i praksis</p>
+            </li>
+            <li><p>En</p>
+            </li>
+            </ul>
+            <p> <strong>Herunder stå hvad kan og hvad ikke kan pantenteres</strong></p>
+            <ul>
+            <li><p>JA: Nye redstone maskiner</p>
+            </li>
+            <li><p>JA: Nye farms</p>
+            </li>
+            <li><p>NEJ:  logo'er til Armor, shields, banners, osv.</p>
+            </li>
+            <li><p>NEJ:  Bygninger kan og må ikke patensteres</p>
+            </li>
+            </ul>
+            <h2>§ 3.3: Designret</h2>
+            <p>Designret findes for at du kan beholde dine egne designs.</p>
+            <p><strong>Herunder er kravende til at få designret</strong></p>
+            <ul>
+            <li><p>Dit design skal være unikt og må ikke have være set på serveren før</p>
+            </li>
+            <li><p>Dit design må ikke være få simpelt. F.eks. Dannebro eller en firkant.</p>
+            </li>
+            <li><p>En dommer skal vurdere dit design baseres på de forige krav</p>
+            </li>
+            </ul>
+            <p><strong>Herunder er listen af ting du kan få designret på</strong></p>
+            <ul>
+            <li><p>Shields</p>
+            </li>
+            <li><p>Banners</p>
+            </li>
+            <li><p>Armor trims</p>
+            </li>
+            </ul>
+            <h2>§ 4: Dyr</h2>
+            <p><strong>Ved Dyr menes der:</strong></p>
+            <ul>
+            <li><p>Husdyr skal forblive på ejerens grund eller sammen med ejeren på alle tidspunkter</p>
+            </li>
+            <li><p>Vilde dyr ejes ikke af nogen og må derfor blive adopteret eller slagtet</p>
+            </li>
+            <li><p>Ingen må eje* nogle former for dyr. Eksemple: En person kan ikke eje all heste og derefter sælge dem / deres rettigheder</p>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const contentDiv = document.getElementById('content');
+        const originalHTML = contentDiv.innerHTML;
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function highlightMatches(node, query) {
+            if (node.nodeType === Node.TEXT_NODE) {
+                const text = node.textContent;
+                const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+                if (regex.test(text)) {
+                    const span = document.createElement('span');
+                    span.innerHTML = text.replace(regex, '<mark>$1</mark>');
+                    node.parentNode.replaceChild(span, node);
+                }
+            } else if (node.nodeType === Node.ELEMENT_NODE) {
+                if (node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE' && node.tagName !== 'MARK') {
+                    Array.from(node.childNodes).forEach(child => highlightMatches(child, query));
+                }
+            }
+        }
+
+        function searchWords() {
+            const query = document.getElementById('searchInput').value.trim();
+            contentDiv.innerHTML = originalHTML;
+
+            if (query.length === 0) return;
+
+            highlightMatches(contentDiv, query);
+        }
+    </script>
+</body>
+</html>
